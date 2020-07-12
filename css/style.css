@@ -1,0 +1,493 @@
+/* basic color: #ED1B24 ==== I think this will be best ----color: #ED184A; */
+
+
+/*-------------------------------------------------------------------*/
+/* Basic setup */
+/*-------------------------------------------------------------------*/
+
+html,
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+
+*:focus {
+	outline: none;
+}
+
+/*-------------------------------------------------------------------*/
+/* Generic css */
+/*-------------------------------------------------------------------*/
+
+section {
+	padding: 60px 50px;
+}
+
+.section-title {
+	margin-bottom: 50px;
+}
+
+.section-title h2 {
+	font-size: 50px;
+	color: #ED184A;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.underline {
+	width: 110px;
+	border: 2px solid #ED184A;
+	margin: auto;
+	margin-bottom: 27px;
+}
+
+.section-title p {
+	width: 70%;
+	margin: 0 auto;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 28px;
+}
+
+/*-------------------------------------------------------------------*/
+/* Header section */
+/*-------------------------------------------------------------------*/
+
+header {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.4))), url(../img/header-x-min.jpg) no-repeat center center /cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(../img/header-x-min.jpg) no-repeat center center /cover;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+/*============ navigation =============*/
+
+.nav-menu {
+	padding: 30px;
+	-webkit-transition: all .7s;
+	transition: all .7s;
+}
+
+/*--------- logo ----------*/
+.logo {
+	height: 39px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 25px;
+}
+
+/*------ nav menu -------*/
+.menu-item:link,
+.menu-item:visited {
+	margin-left: 15px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #efefef;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.menu-item:hover,
+.menu-item:active {
+	color: #ED184A;
+}
+
+/*------ highlight active menu -------*/
+.nav-menu .navbar-nav > .active > a,
+.nav-menu .navbar-nav > .active > a:hover,
+.nav-menu .navbar-nav > .active > a:focus {
+	color: #f00;
+	font-weight: bold;
+}
+
+.cstm-navbar {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7)));
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+	padding: 5px 30px;
+	border-bottom: 1px solid #ED184A;
+}
+
+/*----- toggler icons -----*/
+.line1,
+.line2,
+.line3 {
+	width: 23px;
+	height: 3px;
+	background-color: #ED184A;
+	margin: 5px;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+
+.change .line1 {
+	-webkit-transform: rotate(-45deg) translate(-5px, 6px);
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+	opacity: 0;
+}
+
+.change .line3 {
+	-webkit-transform: rotate(45deg) translate(-5px, -6px);
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*============ banner =============*/
+.banner {
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80%;
+}
+
+.banner-heading {
+	font-size: 400%;
+}
+
+.h1_spn {
+	vertical-align: middle;
+}
+
+.hdng-lgo {
+	height: 110px;
+}
+
+.banner-par {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+/*-------------------------------------------------------------------*/
+/* Mission section */
+/*-------------------------------------------------------------------*/
+
+.mission {
+	background-color: #151f20;
+	padding-bottom: 30px;
+}
+
+.cstm-col {
+	margin-top: 15px;
+	padding: 0 55px;
+}
+
+.cstm-col i {
+	font-size: 450%;
+	color: #ED184A;
+	margin-bottom: 30px;
+}
+
+.cstm-col p {
+	color: #efefef;
+	line-height: 30px;
+	font-weight: 300;
+}
+
+.mission-2nd-row {
+	margin-top: 60px;
+}
+
+.mission-text h1 {
+	color: #ED184A;
+	font-size: 280%;
+	margin-bottom: 15px;
+}
+
+.mission-text p {
+	color: #efefef;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+/*-------------------------------------------------------------------*/
+/* collection section */
+/*-------------------------------------------------------------------*/
+
+.collection {
+	background-color: #303c3c;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.card-shadow {
+	-webkit-box-shadow: 5px 8px 20px #000;
+	box-shadow: 5px 8px 20px #000;
+}
+
+.heading {
+	position: absolute;
+	top: 70%;
+	right: 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	width: 70%;
+	background-color: #ED184A;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	opacity: .7;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.card-img:hover,
+.heading:hover {
+	opacity: 1;
+}
+
+/*-------------------------------------------------------------------*/
+/* Gallery section */
+/*-------------------------------------------------------------------*/
+
+.gallery {
+	background-color: #dddddd;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.gallery-list-item {
+	color: #777;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.active-item {
+	color: #ed184a;
+}
+
+/*-------------------------------------------------------------------*/
+/* Customers section */
+/*-------------------------------------------------------------------*/
+
+.customers {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5))), url(../img/customers-bg-min.jpg) no-repeat center center /cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/customers-bg-min.jpg) no-repeat center center /cover;
+	background-attachment: fixed;
+}
+
+.img-cstmr {
+	width: 150px;
+	border-radius: 50%;
+	border: 2px solid #ED184A;
+	margin: 40px;
+	margin-top: 0;
+}
+
+.carousel-item p {
+	font-size: 17px;
+	line-height: 28px;
+	margin-bottom: 40px;
+}
+
+.carousel-item h4 {
+	color: #ed184a;
+	font-weight: bold;
+	margin-bottom: 15
+}
+
+/*-------------------------------------------------------------------*/
+/* Pricing section */
+/*-------------------------------------------------------------------*/
+
+.pricing {
+	background-color: #ddd;
+}
+
+.card-1 {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5))), url(../img/card1-bg.jpeg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/card1-bg.jpeg);
+	max-width: 385px;
+}
+
+.card-2 {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5))), url(../img/card2-bg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/card2-bg.jpg);
+	max-width: 400px;
+}
+
+.card-3 {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5))), url(../img/card3-bg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/card3-bg.jpg);
+	max-width: 385px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+	background-size: cover;
+	background-position: center;
+	-webkit-box-shadow: 7px 18px 50px #555;
+	box-shadow: 7px 18px 50px #555;
+	border-radius: 8px;
+}
+
+.card-body h1 {
+	color: #ed184a;
+}
+
+.card-list-item {
+	border-bottom: 1px groove #eee;
+	width: 55%;
+	margin: auto;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.card-list-item:hover {
+	color: #ed184a;
+}
+
+.price-card-btn {
+	background-color: #ed184a;
+	width: 130px;
+	border-radius: 25px;
+	-webkit-box-shadow: 5px 8px 18px #000;
+	box-shadow: 5px 8px 18px #000;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+
+.price-card-btn:hover {
+	background-color: #ff003c;
+	-webkit-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+
+.being-with-us i {
+	color: #ed184a;
+	margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------------------*/
+/* Contact section */
+/*-------------------------------------------------------------------*/
+
+.contact {
+	background-image: linear-gradient(107deg, rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32, .95) 50%, transparent 50%), url(../img/form-img-min.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.cntct-div {
+	margin-top: 60px;
+}
+
+.cntct-div h3 {
+	color: #ed184a;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.input {
+	background: transparent;
+	border-color: transparent;
+	border-bottom: 2px solid #ccc;
+	border-radius: 0;
+	-webkit-transition: all .8s;
+	transition: all .8s;
+}
+
+.input:focus,
+.input:active {
+	background: transparent;
+	border-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	border-bottom: 2px solid #ed184a;
+}
+
+.submit-btn {
+	background-color: #ed184a;
+	border-radius: 8px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.submit-btn:hover {
+	background-color: #ff003c;
+	-webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
+}
+
+.label {
+	color: #ed184a;
+	display: block;
+	margin-top: -70px;
+	margin-left: 4px;
+	font-size: 14px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.input:placeholder-shown + .label {
+	-webkit-transform: translate(20px, 20px);
+	transform: translate(20px, 20px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+/*======================= for responsive =========================*/
+@media (max-width: 992px) {
+	.contact {
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 31, 32, 1)), to(rgba(21, 31, 32, .95)));
+		background: linear-gradient(rgba(21, 31, 32, 1), rgba(21, 31, 32, .95));
+	}
+
+	.cntct-div h3 {
+		font-size: 50px;
+	}
+
+	.contact-form {
+		width: 80%;
+		margin: auto;
+	}
+}
+
+/*-------------------------------------------------------------------*/
+/* footer section */
+/*-------------------------------------------------------------------*/
+
+.footer-link {
+	color: #eee;
+	font-size: 13px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.footer-link:hover {
+	color: #ff003c;
+	text-decoration: none;
+}
+
+.footer-input {
+	background: transparent;
+	border: 2px solid #ed184a;
+}
+
+.footer-input:focus {
+	background: transparent;
+	border: 2px solid #ed184a;
+	color: #fff;
+}
+
+.copy {
+	border-top: 2px solid #ed184a;
+	padding-top: 30px;
+}
